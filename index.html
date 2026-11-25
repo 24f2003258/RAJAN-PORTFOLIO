@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rajan Dev Singh | Computer Science &amp; Data Science Student</title>
+<meta name="description" content="Portfolio of Rajan Dev Singh, B.Tech and IIT Madras BS Data Science student skilled in Python, Flask, SQL and web development.">
+<meta name="author" content="Rajan Dev Singh">
+<meta property="og:title" content="Rajan Dev Singh | Portfolio">
+<meta property="og:description" content="Aspiring Software Developer and Data Science Enthusiast.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<a class="skip" href="#home">Skip to content</a>
+
+<!-- ===== NAVBAR ===== -->
+<header class="nav-wrap">
+  <nav class="navbar navbar-expand-lg container" aria-label="Main navigation">
+    <a class="brand" href="#home" data-bind="shortName">Rajan.</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-label="Toggle menu"><i class="bi bi-list"></i></button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav mx-auto">
+        <li><a class="nav-link" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#skills">Skills</a></li>
+        <li><a class="nav-link" href="#education">Education</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#experience">Experience</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+      <div class="d-flex align-items-center gap-2">
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle dark or light theme"><i class="bi bi-sun"></i></button>
+        <a class="btn-outline" href="resume.pdf" download>Download Resume</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+<!-- ===== HERO ===== -->
+<section id="home" class="hero">
+  <div class="container hero-grid">
+    <aside class="follow" aria-label="Social links">
+      <span>Follow</span>
+      <a data-link="github" href="#" aria-label="GitHub"><i class="bi bi-github"></i></a>
+      <a data-link="linkedin" href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+      <a data-link="email" href="#" aria-label="Email"><i class="bi bi-envelope">rajandeviitm6204@gmail.com</i></a>
+    </aside>
+    <div class="hero-text">
+      <h1>Hi, I'm <br>Rajan Dev Singh</h1>
+      <p class="role">Aspiring Software Developer | Data Science Enthusiast</p>
+      <p class="typed-line">I enjoy <span id="typed" aria-live="off"></span><span class="caret">|</span></p>
+      <p class="lead-text">I build practical web applications with Python and Flask, and I'm learning to turn data into useful insights.</p>
+      <div class="d-flex flex-wrap gap-3">
+        <a href="#projects" class="btn-main">View My Projects</a>
+        <a href="#contact" class="btn-outline">Contact Me</a>
+      </div>
+    </div>
+    <div class="photo-wrap">
+      <span class="hello">.HELLO.</span>
+      <div class="photo-frame">
+        <!-- Replace images/profile.jpg with your photo -->
+        <img src="images/profile.jpg" alt="Portrait of Rajan Dev Singh" width="420" height="500" onerror="this.remove()">
+        <div class="ph-initials" aria-hidden="true">RS</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MARQUEE STRIP ===== -->
+<div class="strip" aria-hidden="true"><div class="strip-track" id="strip"></div></div>
+
+<!-- ===== ABOUT ===== -->
+<section id="about" class="section">
+  <div class="container narrow">
+    <p class="kicker">About</p>
+    <h2>Curious about code, data and building things that work</h2>
+    <p>I'm pursuing a B.Tech degree alongside the IIT Madras BS in Data Science and Applications. This mix of engineering and data science gives me a solid base in programming, databases and statistical thinking.</p>
+    <p>My interests are Python programming, web development, artificial intelligence and machine learning. I like projects with real users and real workflows, such as role-based portals where admins, staff and students each get their own dashboard.</p>
+    <p>My goal is to grow into a software developer who writes clean, maintainable code and uses data to make better products. I'm looking for internships where I can learn from a team and contribute from day one.</p>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section id="skills" class="section alt">
+  <div class="container">
+    <p class="kicker text-center">Skills</p>
+    <h2 class="text-center">My technical toolkit</h2>
+    <div class="grid skills-grid" id="skillsGrid"></div>
+  </div>
+</section>
+
+<!-- ===== EDUCATION ===== -->
+<section id="education" class="section">
+  <div class="container narrow">
+    <p class="kicker text-center">Education</p>
+    <h2 class="text-center">Academic background</h2>
+    <div class="timeline" id="eduList"></div>
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section id="projects" class="section alt">
+  <div class="container">
+    <p class="kicker text-center">Projects</p>
+    <h2 class="text-center">Featured work</h2>
+    <div class="grid projects-grid" id="projectGrid"></div>
+  </div>
+</section>
+
+<!-- ===== EXPERIENCE ===== -->
+<section id="experience" class="section">
+  <div class="container">
+    <p class="kicker text-center">Experience &amp; Achievements</p>
+    <h2 class="text-center">Beyond the classroom</h2>
+    <div class="grid exp-grid" id="expGrid"></div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="section alt">
+  <div class="container narrow">
+    <p class="kicker text-center">Contact</p>
+    <h2 class="text-center">Let's work together</h2>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p>Have an internship, project or question? Send a message and I'll reply soon.</p>
+        <a data-link="email" href="#"><i class="bi bi-envelope"></i> <span data-bind="email"></span></a>
+        <a data-link="linkedin" href="#"><i class="bi bi-linkedin"></i> LinkedIn</a>
+        <a data-link="github" href="#"><i class="bi bi-github"></i> GitHub</a>
+      </div>
+      <form id="contactForm" class="glass" novalidate>
+        <div class="field"><label for="name">Name</label><input id="name" name="name" autocomplete="name" required><small class="err"></small></div>
+        <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required><small class="err"></small></div>
+        <div class="field"><label for="subject">Subject</label><input id="subject" name="subject" required><small class="err"></small></div>
+        <div class="field"><label for="message">Message</label><textarea id="message" name="message" rows="5" required></textarea><small class="err"></small></div>
+        <button class="btn-main w-100" type="submit">Send Message</button>
+        <p id="formStatus" role="status"></p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="brand" href="#home">Rajan Dev Singh</a>
+      <p>Building useful software, one project at a time.</p>
+    </div>
+    <ul class="footer-links">
+      <li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="follow-row">
+      <a data-link="github" href="#" aria-label="GitHub"><i class="bi bi-github"></i></a>
+      <a data-link="linkedin" href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+    </div>  
+  </div>
+  <p class="copy">&copy; <span id="year"></span> Rajan Dev Singh. All rights reserved.</p>
+</footer>
+
+<button id="toTop" class="to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
