@@ -5,8 +5,8 @@ const CONFIG = {
   shortName: "MY PORTFOLIO PAGE : RAJAN",
   email: "rajandeviitm6204@gmail.com",               // TODO: add your email
   github: "https://github.com/your-username",    // TODO: add GitHub URL
-  linkedin: "www.linkedin.com/in/rajan-dev-singh-051071288", // TODO: add LinkedIn URL
-  cgpa: "8.10",
+  linkedin: "https://https://www.linkedin.com/in/rajandevsingh6204", // TODO: add LinkedIn URL
+  //cgpa: "7",
   typed: ["Python Programming","Web Development","Data Science","Artificial Intelligence","Machine Learning","Software Development"]
 };
 
@@ -22,8 +22,8 @@ const SKILLS = [
 
 /* ---------- Education: fill in the placeholders ---------- */
 const EDUCATION = [
-  {degree:"B.Tech Degree in CSE(CYBERSECURITY)",school:"DARBHANGA COLLEGE OF ENGINEERING , DARBHANGA ,BIHAR",period:"2023 – 2027",note:"jsjjs"},
-  {degree:"BS Degree in Data Science and Applications",school:"IIT Madras",period:"MAY 2024 – APR 2028",note:"CGPA: 8.10"}
+  {degree:"B.Tech Degree in CSE(CYBERSECURITY)",school:"DARBHANGA COLLEGE OF ENGINEERING , DARBHANGA ,BIHAR",period:"2023 – 2027",note:"CGPA: 8.14"},
+  {degree:"BS Degree in Data Science and Applications",school:"IIT Madras",period:"MAY 2024 – APR 2028",note:"CGPA: 7"}
 ];
 
 /* ---------- Projects: copy a block to add more ---------- */
@@ -40,13 +40,17 @@ const PROJECTS = [
 ];
 
 /* ---------- Experience: replace placeholders with real entries ---------- */
+/* ---------- Experience: paste over the EXPERIENCE array in js/script.js ---------- */
 const EXPERIENCE = [
-  {title:"Internships",icon:"bi-briefcase",text:"[Add internship role, company and dates]"},
-  {title:"Certifications",icon:"bi-patch-check",text:""},
+  {title:"Internships",icon:"bi-briefcase",
+   text:"1) Cyber Security and Ethical Hacking (project-based), Coincent in association with Threat-Prism, 01 Nov 2025 – 31 Dec 2025. [Add what you worked on and your completion status]"},
+  {title:"Certifications",icon:"bi-patch-check",
+   text:["1) The Joy of Computing using Python, NPTEL Elite, 88% (Jul–Oct 2026)., 2) Programming, Data Structures and Algorithms using Python, NPTEL Elite, 75% (Jan–Mar 2026) ·3) Advanced C++, Spoken Tutorial IIT Bombay, 100% (Mar 2025) · Linux, Spoken Tutorial IIT Bombay, 67.78% (Oct 2024) · C, Spoken Tutorial IIT Bombay, 52.50% (Feb 2024)"]},
   {title:"Technical Achievements",icon:"bi-trophy",text:"[Add hackathons, contests or rankings]"},
   {title:"Workshops",icon:"bi-people",text:"[Add workshops attended or conducted]"},
-  {title:"Academic Accomplishments",icon:"bi-mortarboard",text:"[Add scholarships, honours or awards]"}
+  {title:"Academic Accomplishments",icon:"bi-mortarboard",text:"1) The Joy of Computing using Python, NPTEL Elite, 88% (Jul–Oct 2026)., 2) Programming, Data Structures and Algorithms using Python, NPTEL Elite, 75% (Jan–Mar 2026) ·3) Advanced C++, Spoken Tutorial IIT Bombay, 100% (Mar 2025) · Linux, Spoken Tutorial IIT Bombay, 67.78% (Oct 2024) · C, Spoken Tutorial IIT Bombay, 52.50% (Feb 2024)"}
 ];
+
 
 /* ========================== RENDERING ========================== */
 const $ = (s, r = document) => r.querySelector(s);
