@@ -4,8 +4,8 @@
 const CONFIG = {
   shortName: "MY PORTFOLIO PAGE : RAJAN",
   email: "rajandeviitm6204@gmail.com",               // TODO: add your email
-  github: "https://github.com/your-username",    // TODO: add GitHub URL
-  linkedin: "https://https://www.linkedin.com/in/rajandevsingh6204", // TODO: add LinkedIn URL
+  github: "https://github.com/24f2003258",    // TODO: add GitHub URL
+  linkedin: "https://www.linkedin.com/in/rajandevsingh6204", // TODO: add LinkedIn URL
   //cgpa: "7",
   typed: ["Python Programming","Web Development","Data Science","Artificial Intelligence","Machine Learning","Software Development"]
 };
@@ -28,13 +28,13 @@ const EDUCATION = [
 
 /* ---------- Projects: copy a block to add more ---------- */
 const PROJECTS = [
-  {title:"Examination Management Portal",img:"images/project1.jpg",icon:"bi-journal-check",
+  {title:"Examination Management Portal",img:"images/project1.png",icon:"bi-journal-check",
    points:["Flask-based examination management application","Admin, examiner and student roles","Exam scheduling, slot booking and evaluation management"],
    tech:["Python","Flask","SQLAlchemy","HTML","CSS"],github:"#",demo:"#"},
-  {title:"Trekking Management System",img:"images/project2.jpg",icon:"bi-compass",
+  {title:"Trekking Management System",img:"images/project2.png",icon:"bi-compass",
    points:["Web application for managing trekking activities","Admin, staff and user dashboards","Trek management, booking and participant management"],
    tech:["Python","Flask","SQLAlchemy","HTML","CSS"],github:"https://github.com/24f2003258/Trekking-Management-Application.git",demo:"#"},
-  {title:"Hospital Management System",img:"images/project3.jpg",icon:"bi-hospital",
+  {title:"Hospital Management System",img:"images/project3.png",icon:"bi-hospital",
    points:["Web-based hospital management application","Patient, doctor and admin dashboards","Appointment, laboratory and hospital management"],
    tech:["Python","Flask","SQLite","HTML","CSS","Bootstrap"],github:"https://github.com/24f2003258/HospitalManagementSystem.git",demo:"#"}
 ];
@@ -43,14 +43,27 @@ const PROJECTS = [
 /* ---------- Experience: paste over the EXPERIENCE array in js/script.js ---------- */
 const EXPERIENCE = [
   {title:"Internships",icon:"bi-briefcase",
-   text:"1) Cyber Security and Ethical Hacking (project-based), Coincent in association with Threat-Prism, 01 Nov 2025 – 31 Dec 2025. [Add what you worked on and your completion status]"},
+   text:[
+   "1) Cyber Security ,XpertIntern, Virtual Internship • Nov 2026 - Present (1 month) ",
+   "2) Cyber Security ,XpertIntern, Patna ,Internship • Oct 2026 - Nov 2026 (1 month)",
+  "3) Python Programming Invigo Infotech, Purnia ,Internship • Jun 2025 - Jun 2025 (1 month)"
+]},
   {title:"Certifications",icon:"bi-patch-check",
-   text:["1) The Joy of Computing using Python, NPTEL Elite, 88% (Jul–Oct 2026)., 2) Programming, Data Structures and Algorithms using Python, NPTEL Elite, 75% (Jan–Mar 2026) ·3) Advanced C++, Spoken Tutorial IIT Bombay, 100% (Mar 2025) · Linux, Spoken Tutorial IIT Bombay, 67.78% (Oct 2024) · C, Spoken Tutorial IIT Bombay, 52.50% (Feb 2024)"]},
-  {title:"Technical Achievements",icon:"bi-trophy",text:"[Add hackathons, contests or rankings]"},
-  {title:"Workshops",icon:"bi-people",text:"[Add workshops attended or conducted]"},
-  {title:"Academic Accomplishments",icon:"bi-mortarboard",text:"1) The Joy of Computing using Python, NPTEL Elite, 88% (Jul–Oct 2026)., 2) Programming, Data Structures and Algorithms using Python, NPTEL Elite, 75% (Jan–Mar 2026) ·3) Advanced C++, Spoken Tutorial IIT Bombay, 100% (Mar 2025) · Linux, Spoken Tutorial IIT Bombay, 67.78% (Oct 2024) · C, Spoken Tutorial IIT Bombay, 52.50% (Feb 2024)"}
-];
+  text:[
+    "1) The Joy of Computing using Python, NPTEL Elite, 88% (Jul–Oct 2026).",
+    "2) Programming, Data Structures and Algorithms using Python, NPTEL Elite, 75% (Jan–Mar 2026)",
+    "3)Spoken Tutorial IIT Bombay. :>> Advanced C++: 100% (Mar 2025) ; Linux:  67.78% (Oct 2024) ; C: 52.50% (Feb 2024)"]},
+  {title:"Trainings & Courses ",icon:"bi-people",text:[
+    "1) Iot Training IHUB DIVYASAMPARK ,IIT ROORKEE, Darbhanga ,Aug 2025 - Oct 2025 ,40 Hours Skill Devlopement  program on Internet Of Things.",
+    "2)Robotics Training AKURAM ROBO PVT. LTD, Darbhanga ,May 2024 - May 2024 ,Gained hands-on experience in Arduino programming by learning coding syntax, functions, and hardware integration to develop a Wi-Fi-controlled robotic car.",
+    "3)Bootcamp on Drone  and Allied Technology under the project 'Capacity Building for Human Resource Development in Drone and Related Technology'  conducted by CDAC PATNA and secured with Grade 'A' ,Mar 2024 - Mar 2024"]},
 
+  {title:"Academic Accomplishments",icon:"bi-mortarboard",
+    text:[
+    "1) The Joy of Computing using Python, NPTEL Elite, 88% (Jul–Oct 2026).",
+    "2) Programming, Data Structures and Algorithms using Python, NPTEL Elite, 75% (Jan–Mar 2026)",
+    "3)Spoken Tutorial IIT Bombay. :>> Advanced C++: 100% (Mar 2025) ; Linux:  67.78% (Oct 2024) ; C: 52.50% (Feb 2024)"]}
+    ]
 
 /* ========================== RENDERING ========================== */
 const $ = (s, r = document) => r.querySelector(s);
@@ -83,7 +96,7 @@ $("#projectGrid").innerHTML = PROJECTS.map(p => `
     <div class="body"><h3>${esc(p.title)}</h3>
       <ul class="pts">${p.points.map(x => `<li>${esc(x)}</li>`).join("")}</ul>${tags(p.tech)}
       <div class="links"><a class="btn-outline" href="${p.github}" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
-      <a class="btn-main" href="${p.demo}" target="_blank" rel="noopener">Live Demo</a></div></div>
+
   </article>`).join("");
 
 $("#expGrid").innerHTML = EXPERIENCE.map(x =>
@@ -165,3 +178,4 @@ form.addEventListener("submit", e => {
   statusEl.textContent = "Thanks! Your email app should open to send the message.";
   form.reset();
 });
+
